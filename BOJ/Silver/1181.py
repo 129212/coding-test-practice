@@ -22,6 +22,7 @@ def sort_word() :
     # print(word_dict)
 
     # 단어 길이(value값)별로 정렬
+    word_dict
     word_dict = list(sorted(word_dict.items(), key= lambda x: x[1]))
     # print(word_dict)
 
@@ -42,7 +43,7 @@ def sort_word() :
     # print(word)
     # print(len_count_list)
     
-    
+    # 길이가 같은 단어들을 슬라이싱해서 정렬 후 새 리스트에 담기
     start_index = 0
     next_index = 0
     for i in range(len(len_count_list)) :
@@ -63,6 +64,8 @@ def sort_word() :
             answer[start_index : next_index] = temp[:]
             start_index = next_index
         # print(f"i: {i}, answer : {answer}, start_index: {start_index}")
+
+    # 출력
     for word in answer :
         print(word)
 
