@@ -8,11 +8,15 @@ def statistics_func() :
     for _ in range(N) :
         number.append(int(stdin.readline()))
     
+    # 산술평균
     avg = sum(number) / len(number)
 
+    # 중앙값
     number.sort()
     mean = number[ len(number) // 2 ]
 
+    # 최빈값
+    # 최빈값이 여러 개 일 때는 최빈값 중 두 번째로 작은 값을 출력한다.
     if len(number) == 1 :
         mode = number[0]
     else :
@@ -28,8 +32,10 @@ def statistics_func() :
         else :
             mode = count_dict[-1][0]
 
+    # 범위
     ran = max(number) - min(number)
-    print("------")
+
+    # print("------")
     print(round(avg))
     print(round(mean))
     print(mode)
