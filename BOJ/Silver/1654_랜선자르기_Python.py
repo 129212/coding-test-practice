@@ -15,7 +15,7 @@ def cut_lancable() :
 
     start = 1
     end = max_len
-    while start <= end :               # K 가 N 개가 될 때까지 이진탐색
+    while start <= end :               # K 가 N 개(이상)가 될 때까지 이진탐색
         K = 0
         idx = start + ((end - start) // 2)
         for lan in lancable :
