@@ -1,7 +1,7 @@
 from sys import stdin
 
 def sort_coordinate() :
-    coordinate= []
+    coordinate = []
     N = int(stdin.readline())
 
     for _ in range(N) :
