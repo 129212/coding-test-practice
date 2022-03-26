@@ -1,6 +1,6 @@
 from sys import stdin
 
-def queue2() :
+def queue() :
     queue = []
     start = 0
     end = 0
@@ -30,4 +30,4 @@ def queue2() :
             if start < end : print(queue[end - 1])
             else : print(-1)
 
-queue2()
+queue()
