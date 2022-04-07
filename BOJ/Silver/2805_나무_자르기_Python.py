@@ -6,11 +6,9 @@ def cut_tree() :
     # 입력받기
     N, M = map(int, stdin.readline().split())
     tree = list(map(int, stdin.readline().split()))
-    print(N, M, tree)
 
     start = 0
     end = max(tree)
-    print(end)
     while start <= end :
         remain = 0
         idx = start + ((end - start) // 2)
@@ -22,8 +20,7 @@ def cut_tree() :
             start = idx + 1
         else : 
             end = idx - 1
-    print("-----")
-    print(f"anwer : {answer}")
+    # print("-----")
     print(max(answer))
 
 cut_tree()
